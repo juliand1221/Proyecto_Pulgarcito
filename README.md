@@ -8,7 +8,7 @@ Proyecto Pulgarcito permite a padres o acudientes registrar a los niños, subir 
 ## Características
 - Registro de usuarios (padres/acudientes).
 - Registro de niños y gestión de sus datos.
-- Subida y gestión de documentos (PDF/JPG).
+- Subida y gestión de documentos (PDF/JPG/JPEG).
 - Dashboard de administrador para validar/aceptar/rechazar documentos.
 - Dashboard de usuario para subir los documentos y gestionar
 - Notificaciones por correo (PHPMailer).
