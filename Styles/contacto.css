@@ -1,0 +1,233 @@
+/* ========== CONTACT PAGE STYLES ========== */
+.contact-info h3, 
+.social-media h3, 
+.whatsapp-section h3, 
+.business-hours h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.contact-item:hover {
+    background: linear-gradient(135deg, #87CEEB 0%, #FFB347 100%);
+    color: white;
+    transform: translateX(5px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-item:hover i {
+    color: white;
+}
+
+.contact-item i {
+    margin-right: 12px;
+    width: 20px;
+    color: #3498db;
+    font-size: 1.1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.facebook { 
+    background: linear-gradient(135deg, #3b5998 0%, #2d4373 100%); 
+}
+
+.instagram { 
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+}
+
+.twitter { 
+    background: linear-gradient(135deg, #1da1f2 0%, #0d8bd9 100%); 
+}
+
+.youtube { 
+    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%); 
+}
+
+.whatsapp-form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    font-family: inherit;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.hours-list {
+    list-style: none;
+    padding: 0;
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hours-list li {
+    padding: 12px 0;
+    border-bottom: 2px solid #e9ecef;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.hours-list li:before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+    font-size: 1.2rem;
+}
+
+.hours-list li:last-child {
+    border-bottom: none;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+#whatsapp-btn {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    border: none;
+    padding: 15px;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+}
+
+#whatsapp-btn:hover {
+    background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .contact-info h3, 
+    .social-media h3, 
+    .whatsapp-section h3, 
+    .business-hours h3 {
+        font-size: 1.1rem;
+    }
+    
+    .contact-item {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .whatsapp-form {
+        padding: 15px;
+    }
+    
+    .hours-list {
+        padding: 15px;
+    }
+    
+    .hours-list li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-item {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+    
+    .contact-item i {
+        font-size: 1rem;
+        margin-right: 8px;
+    }
+    
+    .social-icons {
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .form-control {
+        padding: 10px 12px;
+    }
+    
+    #whatsapp-btn {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
